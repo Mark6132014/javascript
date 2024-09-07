@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>
+      JavaScript Experiemental Input
+    </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <button id="execute" style="height: 10px; width: 100%; position: fixed; bottom: 10px; left: 0;">Execute JavaScript Code</button>
+    <input type="text" style="height: 10px; width: 100%; position: fixed; bottom: 0; left: 0;" placeholder="Type in your JavaScript code here..." id="code">
+    <script>
+      document.querySelector("#execute").addEventListener("click", () => {
+        let input = document.querySelector("#code").value;
+        eval(input);
+      });
+    </script>
+  </body>
+</html>
